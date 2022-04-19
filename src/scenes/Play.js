@@ -21,7 +21,7 @@ class Play extends Phaser.Scene {
 
         this.bw = this.add.image(0, 345, 'bw').setOrigin(0, 0); // it's a little jank i know... but it works
 
-        this.add.rectangle(0, borderUISize + borderPadding, game.config. width, borderUISize * 2, 0x00FF00).setOrigin(0, 0);
+        this.add.rectangle(0, borderUISize + borderPadding, game.config. width, borderUISize * 2, 0xeff705).setOrigin(0, 0);
 
         this.p1Ice = new Ice(this, game.config.width/2, game.config.height - borderUISize - borderPadding, 'ice').setOrigin(-5, 2.6);
 
@@ -73,7 +73,7 @@ class Play extends Phaser.Scene {
         let scoreConfig = {
             fontFamily: 'Courier',
             fontSize: '28px',
-            backgroundColor: '#F3B141',
+            backgroundColor: '#4bb4fa',
             color: '#843605',
             align: 'right',
             padding: {

@@ -4,7 +4,7 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('sfx_select', './Assets/assets_blip_select12 (1).wav');
+        this.load.audio('sfx_select', './Assets/magic_ding.mp3');
         this.load.audio('sfx_explosion', './Assets/assets_explosion38.wav');
         this.load.audio('sfx_rocket', './Assets/assets_rocket_shot.wav'); // kept for the menu since i like the sound of it, but used new sound for blasts
         this.load.audio('sfx_bolt', './assets/thunder.mp3');  // not the best thunder sound effect... but the only free one i could find that was relatively short enough
@@ -15,8 +15,8 @@ class Menu extends Phaser.Scene {
         let menuConfig = {
             fontFamily: 'Courier',
             fontSize: '28px',
-            backgroundColor: '#F3B141',
-            color: '#843605',
+            backgroundColor: '#f73d0a',
+            color: '#000000',
             align: 'right',
             padding: {
                 top: 5,
@@ -27,9 +27,13 @@ class Menu extends Phaser.Scene {
 
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize*2 - borderPadding*2, 'WIZARD PATROL', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'Use ←→ arrows to move', menuConfig).setOrigin(0.5);
+        menuConfig.backgroundColor = '#eff705';
+        menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2, 'Press (B) for a fast but thin bolt', menuConfig).setOrigin(0.5);
+        menuConfig.backgroundColor = '#4bb4fa';
+        menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 'Press (F) for a slower, wider frost', menuConfig).setOrigin(0.5);
-        menuConfig.backgroundColor = '#00FF00';
+        menuConfig.backgroundColor = '#f73d0a';
         menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize*2 + borderPadding*2, 'Press ← for Novice or → for Expert', menuConfig).setOrigin(0.5);
 
