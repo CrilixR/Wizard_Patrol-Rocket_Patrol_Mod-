@@ -4,9 +4,9 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('sfx_select', './Assets/magic_ding.mp3');
-        this.load.audio('sfx_explosion', './Assets/assets_explosion38.wav');
-        this.load.audio('sfx_rocket', './Assets/assets_rocket_shot.wav'); // kept for the menu since i like the sound of it, but used new sound for blasts
+        this.load.audio('sfx_select', './assets/magic_ding.mp3');
+        this.load.audio('sfx_explosion', './assets/assets_explosion38.wav');
+        this.load.audio('sfx_rocket', './assets/assets_rocket_shot.wav'); // kept for the menu since i like the sound of it, but used new sound for blasts
         this.load.audio('sfx_bolt', './assets/thunder.mp3');  // not the best thunder sound effect... but the only free one i could find that was relatively short enough
         this.load.audio('sfx_frost', './assets/ice_blast.wav'); // between this and the thunder its pretty clear sound design is not my forte lol...
     }
